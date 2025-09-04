@@ -22,6 +22,12 @@
            default="checkstyle-suppressions.xml" />
     <property name="optional" value="true"/>
   </module>
+<!-- added in rule -->
+           <module name="SuppressionFilter">
+    <property name="file" value="${org.checkstyle.google.suppressionfilter.config}"
+           default="checkstyle-suppressions.xml" />
+    <property name="optional" value="true"/>
+  </module>
 
   <module name="TreeWalker">
     <module name="OuterTypeFilename"/>
@@ -51,14 +57,6 @@
       <property name="tokens"
                value="LITERAL_DO, LITERAL_ELSE, LITERAL_FOR, LITERAL_IF, LITERAL_WHILE"/>
     </module>
-
-            <module name="LineLength">
-    <property name="fileExtensions" value="java"/>
-    <property name="max" value="1000"/>
-    <property name="ignorePattern"
-             value="^package.*|^import.*|href\s*=\s*&quot;[^&quot;]*&quot;|http://|https://|ftp://"/>
-  </module>
-            
     <module name="LeftCurly">
       <property name="tokens"
                value="ANNOTATION_DEF, CLASS_DEF, CTOR_DEF, ENUM_CONSTANT_DEF, ENUM_DEF,
