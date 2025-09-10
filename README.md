@@ -1,3 +1,3 @@
 # Software Engineering Project Starter Code
 
-This system will find out if the input number is odd or even. For example, an input of '7' will have an output of 'odd'.
+This system will find the factorial of the input number. For example, an input of '4' will have an output of '24'.
